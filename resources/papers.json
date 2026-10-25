@@ -1,0 +1,445 @@
+{
+  "title": "Awesome Tabular Foundation Models",
+  "checked_on": "2026-10-25",
+  "sections": [
+    {
+      "id": "surveys",
+      "title": "Surveys",
+      "description": "Overviews focused on pretrained models for tabular prediction.",
+      "papers": [
+        {
+          "id": "critical-review",
+          "title": "The Current Generation of Tabular Foundation Models: A Critical Review",
+          "url": "https://www.mdpi.com/2504-4990/8/8/244",
+          "year": 2026,
+          "venue": "Machine Learning and Knowledge Extraction",
+          "status": "journal",
+          "summary": "Reviews model families, pretraining regimes, deployment choices, and limitations of the current TFM literature."
+        }
+      ]
+    },
+    {
+      "id": "foundations-and-prior-data-fitted-networks",
+      "title": "Foundations and Prior-Data Fitted Networks",
+      "description": "The ideas behind learning a predictor across tasks before applying it to a new table.",
+      "papers": [
+        {
+          "id": "pfn",
+          "title": "Transformers Can Do Bayesian Inference",
+          "url": "https://arxiv.org/abs/2112.10510",
+          "year": 2022,
+          "venue": "ICLR",
+          "status": "conference",
+          "summary": "Introduces prior-data fitted networks that learn to approximate posterior prediction from datasets sampled from a prior.",
+          "first_preprint": 2021
+        },
+        {
+          "id": "tabpfn-v1",
+          "title": "TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second",
+          "url": "https://arxiv.org/abs/2207.01848",
+          "year": 2023,
+          "venue": "ICLR",
+          "status": "conference",
+          "summary": "Uses synthetic prior training to predict small classification datasets from labeled context without target-specific weight updates.",
+          "first_preprint": 2022
+        },
+        {
+          "id": "tabpfn-v2",
+          "title": "Accurate predictions on small data with a tabular foundation model",
+          "url": "https://www.nature.com/articles/s41586-024-08328-6",
+          "year": 2025,
+          "venue": "Nature",
+          "status": "journal",
+          "summary": "Extends the TabPFN approach to classification and regression using a pretrained predictor conditioned on the target dataset."
+        }
+      ]
+    },
+    {
+      "id": "synthetic-prior-pretraining-and-scalable-in-context-learning",
+      "title": "Synthetic-Prior Pretraining and Scalable In-Context Learning",
+      "description": "Models trained on generated tasks, with work on prior diversity, architecture, and inference efficiency.",
+      "papers": [
+        {
+          "id": "tabicl",
+          "title": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data",
+          "url": "https://arxiv.org/abs/2502.05564",
+          "year": 2025,
+          "venue": "ICML",
+          "status": "conference",
+          "summary": "Combines column and row representations with efficient in-context learning for tabular classification."
+        },
+        {
+          "id": "mitra",
+          "title": "Mitra: Mixed Synthetic Priors for Enhancing Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2510.21204",
+          "year": 2025,
+          "venue": "NeurIPS",
+          "status": "conference",
+          "summary": "Studies a curated mixture of synthetic task generators for pretrained classification and regression."
+        },
+        {
+          "id": "tabpfn-25",
+          "title": "TabPFN-2.5: Advancing the State of the Art in Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2511.08667",
+          "year": 2025,
+          "venue": "arXiv",
+          "status": "technical-report",
+          "summary": "Reports a new TabPFN generation with expanded synthetic priors, larger supported tasks, and adaptation options."
+        },
+        {
+          "id": "tabiclv2",
+          "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+          "url": "https://arxiv.org/abs/2602.11139",
+          "year": 2026,
+          "venue": "ICML",
+          "status": "conference",
+          "summary": "Expands TabICL with classification and regression, revised synthetic task generation, and more efficient training and inference."
+        },
+        {
+          "id": "tabpfn-3",
+          "title": "TabPFN-3: Technical Report",
+          "url": "https://arxiv.org/abs/2605.13986",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "technical-report",
+          "summary": "Describes changes to TabPFN pretraining and inference, alongside extensions to additional data settings."
+        },
+        {
+          "id": "mitra-v2",
+          "title": "Mitra-v2 Technical Report",
+          "url": "https://arxiv.org/abs/2609.04540",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "technical-report",
+          "summary": "Expands synthetic pretraining diversity and context capacity for classification and regression."
+        },
+        {
+          "id": "tabpfn-35",
+          "title": "TabPFN-3.5: Technical Report",
+          "url": "https://arxiv.org/abs/2609.17895",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "technical-report",
+          "summary": "Reports the next TabPFN release and evaluates its behavior across standard and more varied tabular tasks."
+        },
+        {
+          "id": "tabfm",
+          "title": "TabFM: A Zero-Shot Foundation Model for Tabular Data",
+          "url": "https://arxiv.org/abs/2609.37959",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Uses synthetic task pretraining for tabular in-context prediction and studies calibration and ensembling."
+        }
+      ]
+    },
+    {
+      "id": "real-data-and-cross-table-pretraining",
+      "title": "Real-Data and Cross-Table Pretraining",
+      "description": "Transfer across heterogeneous tables, including real-data pretraining and knowledge-graph-based representations.",
+      "papers": [
+        {
+          "id": "transtab",
+          "title": "TransTab: Learning Transferable Tabular Transformers Across Tables",
+          "url": "https://arxiv.org/abs/2205.09328",
+          "year": 2022,
+          "venue": "NeurIPS",
+          "status": "conference",
+          "summary": "Builds transferable representations across tables with changing or partially overlapping feature schemas."
+        },
+        {
+          "id": "xtab",
+          "title": "XTab: Cross-table Pretraining for Tabular Transformers",
+          "url": "https://proceedings.mlr.press/v202/zhu23k.html",
+          "year": 2023,
+          "venue": "ICML",
+          "status": "conference",
+          "summary": "Pretrains shared transformer components across heterogeneous datasets using table-specific input and output components."
+        },
+        {
+          "id": "unitabe",
+          "title": "UniTabE: A Universal Pretraining Protocol for Tabular Foundation Model in Data Science",
+          "url": "https://arxiv.org/abs/2307.09249",
+          "year": 2024,
+          "venue": "ICLR",
+          "status": "conference",
+          "summary": "Uses a unified table representation and pretraining protocol to support transfer across schemas and downstream tasks.",
+          "first_preprint": 2023
+        },
+        {
+          "id": "cm2",
+          "title": "Towards Cross-Table Masked Pretraining for Web Data Mining",
+          "url": "https://arxiv.org/abs/2307.04308",
+          "year": 2024,
+          "venue": "The Web Conference",
+          "status": "conference",
+          "summary": "Introduces CM2, combining semantic column representations with masked pretraining across web tables.",
+          "first_preprint": 2023
+        },
+        {
+          "id": "carte",
+          "title": "CARTE: Pretraining and Transfer for Tabular Learning",
+          "url": "https://proceedings.mlr.press/v235/kim24d.html",
+          "year": 2024,
+          "venue": "ICML",
+          "status": "conference",
+          "summary": "Represents rows as graphs and transfers knowledge-graph-pretrained representations to heterogeneous tabular tasks."
+        },
+        {
+          "id": "tabdpt",
+          "title": "TabDPT: Scaling Tabular Foundation Models on Real Data",
+          "url": "https://arxiv.org/abs/2410.18164",
+          "year": 2025,
+          "venue": "NeurIPS",
+          "status": "conference",
+          "summary": "Pretrains on real tables and uses retrieved examples as context for prediction on a new dataset.",
+          "first_preprint": 2024
+        },
+        {
+          "id": "tabdpt-turbo",
+          "title": "TabDPT-Turbo: Efficient In-Context Learning for Tabular Prediction",
+          "url": "https://arxiv.org/abs/2608.01400",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Studies row-based attention and longer-context real-data pretraining to improve in-context prediction efficiency."
+        }
+      ]
+    },
+    {
+      "id": "semantic-and-language-model-based-prediction",
+      "title": "Semantic and Language-Model-Based Prediction",
+      "description": "Models that use feature names, text values, or language pretraining. General LLM approaches are marked as adjacent work.",
+      "papers": [
+        {
+          "id": "tabllm",
+          "title": "TabLLM: Few-shot Classification of Tabular Data with Large Language Models",
+          "url": "https://proceedings.mlr.press/v206/hegselmann23a.html",
+          "year": 2023,
+          "venue": "AISTATS",
+          "status": "conference",
+          "summary": "An adjacent LLM approach that serializes table rows into text for few-shot classification."
+        },
+        {
+          "id": "tabula-8b",
+          "title": "Large Scale Transfer Learning for Tabular Data via Language Modeling",
+          "url": "https://arxiv.org/abs/2406.12031",
+          "year": 2024,
+          "venue": "NeurIPS",
+          "status": "conference",
+          "summary": "Introduces TabuLa-8B and transfers language-model pretraining to tabular prediction through a large collection of table tasks."
+        },
+        {
+          "id": "tabstar",
+          "title": "TabSTAR: A Tabular Foundation Model for Tabular Data with Text Fields",
+          "url": "https://arxiv.org/abs/2505.18125",
+          "year": 2025,
+          "venue": "NeurIPS",
+          "status": "conference",
+          "summary": "Learns target-aware semantic representations for text-containing tables through cross-dataset pretraining and downstream adaptation."
+        },
+        {
+          "id": "contexttab",
+          "title": "ConTextTab: A Semantics-Aware Tabular In-Context Learner",
+          "url": "https://arxiv.org/abs/2506.10707",
+          "year": 2025,
+          "venue": "NeurIPS",
+          "status": "conference",
+          "summary": "Combines real-table pretraining and semantic representations to condition tabular predictions on labeled examples."
+        }
+      ]
+    },
+    {
+      "id": "alternative-and-unified-architectures",
+      "title": "Alternative and Unified Architectures",
+      "description": "Complementary mechanisms, including generated classifier weights, conditional distribution modeling, and attention design.",
+      "papers": [
+        {
+          "id": "hyperfast",
+          "title": "HyperFast: Instant Classification for Tabular Data",
+          "url": "https://arxiv.org/abs/2402.14335",
+          "year": 2024,
+          "venue": "AAAI",
+          "status": "conference",
+          "summary": "Meta-trains a hypernetwork that generates a task-specific classifier, providing an alternative to direct in-context prediction."
+        },
+        {
+          "id": "limix",
+          "title": "LimiX: Unleashing Structured-Data Modeling Capability for Generalist Intelligence",
+          "url": "https://arxiv.org/abs/2509.03505",
+          "year": 2025,
+          "venue": "arXiv",
+          "status": "technical-report",
+          "summary": "Models variables and missingness jointly to answer different conditional prediction queries with a shared structured-data model."
+        },
+        {
+          "id": "orion-msp",
+          "title": "Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning",
+          "url": "https://arxiv.org/abs/2511.02818",
+          "year": 2025,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Combines multi-scale sparse attention with memory compression for tabular context processing."
+        },
+        {
+          "id": "orion-bix",
+          "title": "Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning",
+          "url": "https://arxiv.org/abs/2512.00181",
+          "year": 2026,
+          "venue": "The Web Conference",
+          "status": "conference",
+          "summary": "Uses attention across rows and features to integrate local and global information for tabular in-context prediction.",
+          "first_preprint": 2025
+        },
+        {
+          "id": "limix-2m",
+          "title": "LimiX-2M: Mitigating Low-Rank Collapse and Attention Bottlenecks in Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2606.04485",
+          "year": 2026,
+          "venue": "ICML",
+          "status": "conference",
+          "summary": "Revises feature tokenization and attention order to improve representation capacity and computational efficiency."
+        }
+      ]
+    },
+    {
+      "id": "adaptation-context-selection-and-pipelines",
+      "title": "Adaptation, Context Selection, and Pipelines",
+      "description": "How pretrained predictors are adapted, supplied with context, and integrated into larger workflows.",
+      "papers": [
+        {
+          "id": "tabforestpfn",
+          "title": "Fine-tuned In-Context Learning Transformers are Excellent Tabular Data Classifiers",
+          "url": "https://arxiv.org/abs/2405.13396",
+          "year": 2024,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Introduces TabForestPFN and studies forest-based synthetic priors together with target-dataset fine-tuning."
+        },
+        {
+          "id": "exploring-fine-tuning",
+          "title": "Exploring Fine-Tuning for Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2601.09654",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Compares adaptation strategies and investigates when fine-tuning helps or harms tabular foundation models."
+        },
+        {
+          "id": "active-icl",
+          "title": "Active In-Context Learning for Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2603.27385",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Studies active acquisition of labeled examples to construct more useful in-context learning sets."
+        },
+        {
+          "id": "tabfm-auto",
+          "title": "TabFM-Auto: Self-Evolving Pipelines for Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2609.37989",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Uses an LLM agent and validation feedback to revise data preparation, feature engineering, context selection, and postprocessing around TabFM."
+        }
+      ]
+    },
+    {
+      "id": "benchmarks-and-evaluation",
+      "title": "Benchmarks and Evaluation",
+      "description": "Resources for comparing accuracy, budgets, generalization, and predictive reliability.",
+      "papers": [
+        {
+          "id": "tabzilla",
+          "title": "When Do Neural Nets Outperform Boosted Trees on Tabular Data?",
+          "url": "https://arxiv.org/abs/2305.02997",
+          "year": 2023,
+          "venue": "NeurIPS Datasets and Benchmarks",
+          "status": "conference",
+          "summary": "Introduces TabZilla and analyzes dataset-dependent differences between neural networks and boosted trees."
+        },
+        {
+          "id": "tabrepo",
+          "title": "TabRepo: A Large Scale Repository of Tabular Model Evaluations and its AutoML Applications",
+          "url": "https://arxiv.org/abs/2311.02971",
+          "year": 2023,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Provides cached predictions and evaluations for analyzing model selection, tuning, and ensembles."
+        },
+        {
+          "id": "tabred",
+          "title": "TabReD: Analyzing Pitfalls and Filling the Gaps in Tabular Deep Learning Benchmarks",
+          "url": "https://arxiv.org/abs/2406.19380",
+          "year": 2025,
+          "venue": "ICLR",
+          "status": "conference",
+          "summary": "Examines gaps in existing benchmarks, including time-dependent data and the role of feature engineering.",
+          "first_preprint": 2024
+        },
+        {
+          "id": "tabarena",
+          "title": "TabArena: A Living Benchmark for Machine Learning on Tabular Data",
+          "url": "https://arxiv.org/abs/2506.16791",
+          "year": 2025,
+          "venue": "NeurIPS Datasets and Benchmarks",
+          "status": "conference",
+          "summary": "Provides a maintained benchmarking system with explicit model configurations, tuning, and ensembling comparisons."
+        },
+        {
+          "id": "illusion-of-generalization",
+          "title": "The Illusion of Generalization in Tabular Language Models",
+          "url": "https://arxiv.org/abs/2602.04031",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Re-evaluates TabuLa-8B and investigates task construction, baseline strength, and contamination in tabular language-model evaluation."
+        },
+        {
+          "id": "beyond-iid",
+          "title": "Beyond IID: How General Are Tabular Foundation Models, Really?",
+          "url": "https://arxiv.org/abs/2606.30410",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Introduces BeyondArena to compare performance across tabular regimes extending beyond conventional IID benchmarks."
+        },
+        {
+          "id": "ood-evaluation",
+          "title": "Empirical Evaluation of Out-Of-Distribution Performance of Tabular Foundation Models",
+          "url": "https://arxiv.org/abs/2607.26000",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Evaluates selected TFMs under label, social, and geographic distribution shifts."
+        },
+        {
+          "id": "tabrelibench",
+          "title": "TabReliBench: Evaluating Tabular Foundation Models Beyond Predictive Accuracy",
+          "url": "https://arxiv.org/abs/2610.13654",
+          "year": 2026,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Examines distributional predictions, calibration, subgroup coverage, and interval efficiency alongside point accuracy."
+        }
+      ]
+    },
+    {
+      "id": "pretraining-corpora",
+      "title": "Pretraining Corpora",
+      "description": "Data resources relevant to transfer, provenance, and contamination analysis.",
+      "papers": [
+        {
+          "id": "tablib",
+          "title": "TabLib: A Dataset of 627M Tables with Context",
+          "url": "https://arxiv.org/abs/2310.07875",
+          "year": 2023,
+          "venue": "arXiv",
+          "status": "preprint",
+          "summary": "Collects tables and surrounding context from web and code sources for large-scale table research."
+        }
+      ]
+    }
+  ]
+}
